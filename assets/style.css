@@ -237,7 +237,7 @@ nav {
 }
 
 .ramaCard {
-    width: 30%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     margin-bottom: 6%;
@@ -255,7 +255,9 @@ nav {
 }
 
 .ramaCardtext {
+    width: 100%;
     padding: 0 10px;
+    overflow-wrap: break-word;
 }
 
 
@@ -380,6 +382,61 @@ nav {
     transform: scale(1.2);
     
 }
+
+
+.blogMain{
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 50px 0 0 0;
+}
+.blogBoxes{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 50px 0 0 0;
+
+}
+.blogbox{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 6%;
+
+}
+.blogBoximg{
+    width: 100%;
+    
+}
+.blogBoximg img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+
+}
+
+.blogBoxtext{
+    width: 100%;
+    padding: 10px 20px;
+    overflow-wrap: break-word;
+    background-color: #fff;
+    box-shadow: 2px 4px 12px 1px rgb(189 185 185);
+}
+    
+
+.blogBoxtext div{
+    margin: 25px 0px;
+    
+}
+
+
+
+/* footer  */
+
+
 
 
 
