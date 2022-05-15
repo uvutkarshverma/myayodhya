@@ -238,6 +238,7 @@ nav {
 
 .ramaCard {
     width: 400px;
+    height: 415px;
     display: flex;
     flex-direction: column;
     margin-bottom: 6%;
@@ -309,6 +310,7 @@ nav {
    letter-spacing: 1.6px;
    font-weight: 300;
    text-align: center;
+   text-transform: capitalize;
 
 }
 
@@ -435,6 +437,87 @@ nav {
 
 
 /* footer  */
+
+footer{
+    width: 100%;
+    
+}
+
+.foot1lay{
+    width:90%;
+    display: flex;
+    padding: 100px 0 60px 0;
+
+}
+.foot1{
+    width:40%;
+    text-align: left;
+    margin: unset;
+    padding-right: 80px;
+
+}
+.foot1 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.foot1 p{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.foot1 div{
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.foot2{
+    width:15%;
+    margin: unset;
+}
+.foot2common h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.foot2common ul{
+    list-style: none;
+    padding-left: 10px;
+    
+}
+.foot2common ul li{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
+.foot2common ul li:hover{
+   color: #e04f16;
+  
+   transition: all .4s ease-in-out;
+}
+
+.foot3{
+    width:15%;
+    margin: unset;
+}
+.foot4{
+    width:30%;
+    margin: unset;
+}
+.foot4 img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    
+    
+}
+.attribution{
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+    padding: 30px 0 ;
+    text-align: center;
+}
 
 
 
