@@ -318,8 +318,6 @@ nav {
     width: 85%;
     display: flex;
     margin: 80px auto;
-
-
 }
 .leftRight1Img{
     width: 30%;
@@ -489,6 +487,11 @@ footer{
     cursor: pointer;
     
 }
+.foot2common ul a{
+  text-decoration: none;
+  color: #000;
+    
+}
 .foot2common ul li:hover{
    color: #e04f16;
   
@@ -519,6 +522,245 @@ footer{
     text-align: center;
 }
 
+/*Navigation bar media */
+@media(max-width:800px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+    }
+  
+    
+    .mobile-nav {
+        font-family: "Montserrat", sans-serif;
+        background: transparent;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    h1 {
+        font-size: 40px;
+      text-align: center;
+      display: none;
+    }
+    
+    .container1{
+        cursor: pointer;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 80px;
+        display: flex;
+    }
+    .ttctba{
+        width: 50%;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    
+    /* .bars{
+        width: 30px;
+        height: 4px;
+        background: #fff;
+    } */
+    .bars{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bars .line{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 3px 0;
+        border-radius: 20px;
+    }
+    
+    /* .bars::before,
+    .bars::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+    }
+    
+    .bars::before{
+        margin-top: 9px;
+    }
+    
+    .bars::after{
+        margin-top: 18px;
+    } */
+    
+    .navmob1{
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        background: #e04f16;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -200vw;
+    }
+    
+    .navmob1 ul {
+        list-style: none;
+    }
+    
+    .navmob1 ul li{
+        margin: 50px 0;
+    }
+    
+    .navmob1 ul li a{
+        color: #fafafa;
+        font-size: 2em;
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .navmob1 ul li a:after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 3px;
+        border-radius: 5px;
+        background: #fff;
+        bottom: -10px;
+        left: 0;
+        transform-origin: left;
+        transition: transform .5s ease;
+        transform: scaleX(0);
+    }
+    
+    
+    .navmob1 ul li a:hover:after{
+        transform: scaleX(1);
+    }
+    
+    .navmob1 .close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .navmob1 h2{
+        position: absolute;
+        top:5%;
+        left: 5%;
+        opacity: 0;
+        pointer-events: none;
+        color: #fff;
+        font-size: 2em;
+    }
+    
+    .navmob1 .close div::before,
+    .navmob1 .close div::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        transition: background .5s ease;
+    }
+    .navmob1 .close div::before{
+        transform: rotate(-45deg);
+    }
+    
+    .navmob1 .close div::after{
+        transform: rotate(45deg);
+    }
+    
+    .navmob1 .close:hover div::before,
+    .navmob1 .close:hover div::after{
+        background: #e04f16;
+    }
+    
+    
+}
+
+@media(max-width:1000px){
+    .sliderText-Box{
+        width: 95%;
+        height: auto;
+    }
+    .sliderText-Box div h1{
+        display: block;
+    }
+    .sliderText-Box div p{
+        display: none;
+    }
+    .imageWithText{
+        flex-direction: column;
+        height: auto;
+    }
+    .imageWithText-text{
+        width:100%;
+        padding: 30px 40px ;
+    }
+    .imageWithText-text h2,.imageWithText-text p{
+       padding: 0;
+    }
+    .imageWithText-image{
+        width: 100%;
+        padding: 30px 0;
+        height: 600px;
+    }
+    .ramaCard{
+        height: auto;
+    }
+    .leftRight1{
+        flex-direction: column;
+        width: 90%;
+
+    }
+    .leftRight1-rev{
+        flex-direction: column-reverse;
+    }
+    .leftRight1Img{
+        width:100%;
+        
+    }
+    .leftRight1Text{
+        width: 100%;
+        padding: 0;
+    }
+    .image2Viewimg{
+        width: 100%;
+    }
+
+    .foot1lay{
+        flex-direction: column;
+    }
+    .footwidthmobile{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .foot1{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+   
+}
 
 
 

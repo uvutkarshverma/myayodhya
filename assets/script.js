@@ -24,3 +24,24 @@ var observer = new IntersectionObserver(function(entries) {
 
 observer.observe(element);
 });
+
+
+
+const open = document.querySelector('.container1');
+    const close = document.querySelector('.close');
+    var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
+    open.addEventListener('click', () => {
+        if (tl.reversed()) {
+            tl.play();
+        } else {
+            tl.to('.navmob1', { right: 0 })
+                .to('.navmob1', { height: '100vh' }, '-=.1')
+                .to('.navmob1 ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
+                .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+                .to('.navmob1 h2', { opacity: 1 }, '-=1');
+        }
+    });
+
+    close.addEventListener('click', () => {
+        tl.reverse();
+    });
